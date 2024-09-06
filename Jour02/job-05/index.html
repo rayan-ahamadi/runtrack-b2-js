@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job05</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <form id="form-search-student" method="GET" style="display: flex;flex-direction: column;align-items: flex-start;">
+    <label for="email-search-student">Search by email</label>
+    <input type="email" name="email" id="email-search-student">
+    <input type="submit" value="Submit">
+  </form>
+
+  <table>
+    <thead>
+      <th>Email</th>
+      <th>Full Name</th>
+      <th>Birth Date</th>
+      <th>Gender</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="student-email"></td>
+        <td id="student-fullname"></td>
+        <td id="student-birthdate"></td>
+        <td id="student-gender"></td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
+</html>
