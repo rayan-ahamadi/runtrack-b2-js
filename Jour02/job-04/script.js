@@ -1,6 +1,6 @@
 const studentForm = document.querySelector("#form-add-student")
 
-studentForm.addEventListener("submit", (event)  => {
+function myRegisterStudent (event){
   event.preventDefault()
 
   const formData = new FormData(studentForm)
@@ -22,4 +22,8 @@ studentForm.addEventListener("submit", (event)  => {
     
   )
 
-})
+}
+
+
+
+studentForm.addEventListener("submit", myRegisterStudent)
