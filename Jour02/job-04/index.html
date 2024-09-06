@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job04</title>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <form id="form-add-student" action="request.php" method="POST" style="display: flex;flex-direction: column;">
+    <label for="student-mail">Email</label>
+    <input type="email" name="email" id="student-mail">
+    
+    <label for="student-fullname">Fullname</label>
+    <input type="text" name="fullname" id="student-fullname">
+
+    <label for="student-gender">Genre</label>
+    <select name="gender" id="student-gender">
+      <option value="Male">Male</option>
+      <option value="Female">Femal</option>
+    </select>
+
+    <label for="student-grade">Grade</label>
+    <select name="grade" id="student-grade">
+      <option value="1">Bachelor 1</option>
+      <option value="2">Bachelor 2 Web</option>
+      <option value="3">Bachelor 2 Logiciel</option>
+      <option value="4">Bachelor 2 Cyber</option>
+      <option value="5">Bachelor 2 IA</option>
+      <option value="6">Bachelor 3 Web</option>
+      <option value="7">Bachelor 3 Logiciel</option>
+      <option value="8">Bachelor 3 Cyber</option>
+      <option value="9">Bachelor 3 IA</option>
+      <option value="10">Mastère 1 IT Business IT</option>
+      <option value="11">Mastère 2 IT Business IT</option>
+      <option value="12">Mastère DPO</option>
+    </select>
+
+    <label for="student-birthdate">Birthdate</label>
+    <input type="date" name="birthdate" id="student-birthdate">
+
+    <label for="submit-btn">Submit</label>
+    <input type="submit" value="Submit" id="submit-btn">
+  </form>
+</body>
+</html>
